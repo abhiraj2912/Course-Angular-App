@@ -6,16 +6,16 @@
                 <thead>
                   <tr>
                     <th scope="col">Title</th>
-                    <th scope="col">Descriptio</th>
+                    <th scope="col">Description</th>
                     <th scope="col">Duration</th>
                     <th scope="col">Date</th>
                     <th scope="col">Venue</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let i for data">
+                  <tr *ngFor="let i of data">
                     <th>{{i.courseTitle}}</th>
-                    <td>{{i.courseDescription}}/td>
+                    <td>{{i.courseDescription}}</td>
                     <td>{{i.courseDuration}}</td>
                     <td>{{i.courseDate}}</td>
                     <td>{{i.courseVenue}}</td>
